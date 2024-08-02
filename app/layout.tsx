@@ -1,5 +1,6 @@
 import './ui/global.css';
 import { montserrat } from './ui/fonts';
+import { inter } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         {children}
         <footer className="py-10 flex justify-center items-center">
           Hecho con ♥ por Astronaut
